@@ -10,6 +10,7 @@
 </head>
 <body>
  <header>
+  
       <div class="header-top" id="back-to__top">
          <!-----header-social------->  
          <div class="header-social-icons">
@@ -23,15 +24,19 @@
          <div class="header-logo">
             <h1  class="logo"><i class="fab fa-vimeo-v"></i>ega</h1>
          </div>
-         <!-----header-sociar------->  
+         <!-----header-btn-user header-btn-user__mobile------->  
          <div class="header-btn-user header-btn-user__mobile">
             <button><i class="far fa-user"></i></button>
             <button><i class="far fa-heart"></i></button>
          </div>
-         <div class="mobile-menu-btn">
-            <span class="mobile-menu-btn__burger" id="open-menu"></span>
+
+         <!---------------------------------->
+         <div class="mobile-menu-btn" >
+ 
+            <span id="open-nav" class="mobile-menu-btn__burger"></span>
             <span class="mobile-menu-btn__name">menu</span>
         </div>
+       
       </div>
    
       <!---------nav------->
@@ -87,9 +92,13 @@
       
        </div>
     <!------------------------------------>
-      <!-------mobile---------->
-   
+ 
+        <!----Mobile nav for small display (codes are in .js )------->
+      <div id="mobile-nav">
+
+      </div>
 </header>
+
 <main>
     <!----------------------------------->
      <!-------------------------------------->
@@ -267,5 +276,8 @@
  </div>
  <!------------------------>
 </main>
+
+
+<script src="./myjs.js"></script>
 </body>
 </html>
