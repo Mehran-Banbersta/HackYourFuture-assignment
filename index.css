@@ -130,7 +130,9 @@ p {
      }
      
      /***********header-btn************/
-     
+     .header-btn-user {
+      padding-right: 2.5rem;
+     }
 
      .header-btn-user button  {
        background-color: inherit;
@@ -138,7 +140,7 @@ p {
        border: none;
        cursor: pointer;
        padding-left: 1rem;
-       font-size: 1.5rem;
+       
      }
 
      .header-btn-user button:hover,
@@ -146,7 +148,57 @@ p {
        color: var(--secondary-color);
        transition: .9s;
      }
-   
+     
+     .fa-user,
+    .fa-heart {
+      font-size: 1.2rem;
+      
+    }
+
+      /***********mobile-menu-btn***************/
+          
+         
+      .mobile-menu-btn {
+       display: none;
+        position: absolute;
+        z-index: 222222;
+        width: 24px;
+        height: 4.5px;
+        top: 1.6rem;
+        right: 1rem;
+        cursor: pointer;
+        /* middle bar */
+      }
+
+      .mobile-menu-btn__name {
+        font-size: x-small;
+        position: absolute;
+        top: .64rem;
+      }
+      .mobile-menu-btn__burger {
+        position: absolute;
+        width: 24px;
+        height: 2.5px;
+        background: #111;
+        /* top bar */
+        /* bottom bar */
+      }
+      .mobile-menu-btn__burger::after {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 2.5px;
+        top: -8px;
+        background: #111;
+      }
+      .mobile-menu-btn__burger::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 2.5px;
+        top: 8px;
+        background: #111;
+      }
      /*********** nav ************/
      header nav.header-nav ul {
        width: 90%;
@@ -297,6 +349,10 @@ p {
            header {
             height: 40vh;
          max-width: 100%;
+           }
+
+           .mobile-menu-btn {
+            display: block;
            }
      
            /********header-top contins logo and login and heart buttons and social icons**********/
