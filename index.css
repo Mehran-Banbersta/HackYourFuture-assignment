@@ -1,0 +1,661 @@
+
+
+
+
+
+
+/********** CSS universal selectors
+/****** It can be used to select any and all types of elements in an HTML page
+/** reset all padding and margin **/
+
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/************************ 
+/************* 
+/** CSS variables **/
+
+:root {
+
+ /* colors */
+ --body_background: #dbe3de;
+ --primary_color: #ede7e4;
+ --secondary-color: #19B136;
+ --card_background: #ede7e4;
+ 
+ /* spacing */
+ --base_padding: 0.75rem;
+ --base_margin: 0.75rem;
+ --base_text_padding_top: 0.75rem;
+ --base_text_padding_bottom: 0.75rem;
+ --base_text_margin_top: 1rem;
+ --base_text_margin_bottom: 1rem;
+ 
+ /* borders */
+ --base_border-thickness: 1px;
+ --base_border-radius: 20px;
+ 
+ /* box-shadow*/
+ --base_box-shadow: 1px 3px 5px rgba(0,0,0,0,1);
+ 
+ /* font-sizes*/
+ --base_font-size: 1rem;
+ /* font-family */
+ --ff-primary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ --ff_accent: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+
+body {
+ font-family: var(--ff-primary);
+ font-weight: 400;
+ font-size: 1.3125rem;
+ line-height: 1.6;
+ scroll-behavior: smooth;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+ line-height: 1;
+ font-weight: 900;
+ margin-bottom: var(--base_text_margin_bottom);
+}
+
+p {
+ margin-bottom: var(--base_text_margin_bottom);
+}
+/************************  
+/************* 
+/*     container     */
+
+       #container {
+       width: 90%;
+       margin: 0 auto;
+       }
+
+/************************  
+/************* 
+/*    header    */
+
+      header {
+       /*
+       background-image:linear-gradient(to top, rgba(0, 0, 0, 0.392), rgba(0, 0, 0, 0.423)), url("https://cdni.rbth.com/rbthmedia/images/2018.02/original/5a8ecb7085600a0da014aef3.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+       */
+       background-color: blanchedalmond;
+       height: 50vh;
+     width: 100%;
+       position: relative;
+      }
+
+      /********header-top contins logo and login and heart buttons and social icons**********/
+      .header-top {
+       display: flex;
+       justify-content: space-between;
+       align-content: center;
+       align-items: center;
+       color: var(--primary_color);
+     }
+       
+
+         /********social icons*********/
+         .fa-facebook,
+         .fa-instagram,
+         .fa-twitter,
+         .fa-whatsapp {
+          
+             cursor: pointer;
+           }
+     
+     /******header-logo********/
+     header .header-logo h1 {
+       color: var(--primary_color);
+       font-size: 3rem;
+     }
+
+     header .header-logo .fa-vimeo-v {
+       color: var(--secondary-color);
+     }
+     
+     /***********header-btn************/
+     
+
+     .header-btn-user button  {
+       background-color: inherit;
+       color: var(--primary_color);
+       border: none;
+       cursor: pointer;
+     }
+
+     .header-btn-user button:hover,
+     .sign_up_latest_recipes span:hover {
+       color: var(--secondary-color);
+       transition: .9s;
+     }
+   
+     /*********** nav ************/
+     header nav.header-nav ul {
+       width: 90%;
+       border-top: 1px solid var(--primary_color);
+       border-bottom: 1px solid var(--primary_color);
+       text-align: center;
+       margin: 0 auto;
+     }
+     
+    
+
+     header nav.header-nav ul li{
+     
+       display: inline;
+       text-align: center;
+       padding-left: .7rem;
+       
+     }
+
+     header nav.header-nav ul li a.header-nav_a{
+       text-decoration: none;
+       color: var(--primary_color);
+       font-size: 1.2rem;
+       font-weight: bold;
+     }
+
+   
+     header nav.header-nav ul li a.active {
+      
+       color: var(--secondary-color);
+     }
+
+     header nav.header-nav ul li a:hover:not(.active) {
+       transition: .5s ease-in-out;
+       color: var(--secondary-color);
+  
+     }
+
+   
+         .menu-link-01 {
+         display: inline-block;
+         position: relative;
+
+         }
+
+         .dropdown-menu {
+         position: absolute;
+         background-color: var(--card_background);
+         color: #101113;
+         z-index: 1;
+         display: none;
+         width: 40vw;
+         height: 30vh;
+         top: 1.3rem;
+         left: 1rem;
+         padding: var(--base_padding);
+
+         }
+
+         .dropdown-menu-link {
+           display: block;
+           text-align: start;
+           text-decoration: none;
+        
+         
+         }
+
+         .menu-link-01 > .dropdown-menu.slide-up {
+
+         transform: translateX(-100%);
+         }
+
+         .menu-link-01:hover > .dropdown-menu.slide-up {
+         display: block;
+         transform: translateX(0);
+         }
+
+         .dropdown-menu:hover {
+
+         transform: translateX(-100);
+         }
+
+
+         .dropdown-menu:hover {
+
+         transform: translateX(0);
+         }
+        
+         /*************************/
+         .header-content {
+          text-align: center;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: var(--primary_color);
+          text-shadow:  0 0px 20px rgba(0, 0, 0, 1.5);
+         }
+
+       .header-content h2 {
+        font-size: 4rem;
+    
+        
+       }
+
+       .header-content__span {
+        color: var(--secondary-color);
+       }
+        
+       .header-content__search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+      }
+
+     .header-content__search input[type="text"]{
+    width: 30vw;
+    padding: 1.3rem 1.5rem;
+     padding-left: 1rem;
+     font-size: 1rem;
+     margin-right: 1rem;
+     border: none;
+     border-radius: 0.3rem;
+     box-shadow:  0 0px 20px rgba(0, 0, 0, .5);
+     outline: none;
+    
+     }
+
+     .header-content__search button{
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      box-shadow:  0 0px 20px rgba(0, 0, 0, 1.2);
+      background-color: #19B136;
+      color: #dbe3de;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 0.3rem;
+      }
+
+/***************************/
+         /* Extra small devices (phones, 600px and down) */
+         
+          @media only screen and (max-width: 600px) {
+           
+      
+/*
+           header {
+           
+            height: 40vh;
+         max-width: 100%;
+           }
+     
+           /********header-top contins logo and login and heart buttons and social icons**********
+           .header-top {
+           background-color: var(--body_background);
+           position: fixed;
+           width: 100%;
+           z-index: 11111;
+          }
+
+          /********social icons*********/
+
+            .header-social-icons {
+              display: none;
+           }
+          /******header-logo********/
+            header .header-logo h1 {
+              font-size: 2rem;
+              color: #101113;
+          }
+          /***********header-btn************/
+
+          .header-btn-user button  {
+           font-size: 1rem;
+           color: #101113;
+          }
+          /*********** nav ************/
+          header nav.header-nav ul {
+           display: none;
+          }
+          
+         /**********header-content***************
+         .header-content {
+          text-align: start;
+          position: absolute;
+         width: 90%;
+        
+          color: var(--primary_color);
+          text-shadow:  0 0px 20px rgba(0, 0, 0, 1.5);
+         }
+
+       .header-content h2 {
+        font-size: 2rem;
+       }
+
+       .header-content__span {
+        color: var(--secondary-color);
+       }
+        
+       .header-content__search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+      }
+
+     .header-content__search input[type="text"]{
+    width: 80vw;
+    padding: 1.3rem 1.5rem;
+     padding-left: 1rem;
+     font-size: 1rem;
+     margin-right: 1rem;
+     border: none;
+     border-radius: 0.3rem;
+     box-shadow:  0 0px 20px rgba(0, 0, 0, .5);
+     outline: none;
+    
+     }
+
+     .header-content__search button{
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      box-shadow:  0 0px 20px rgba(0, 0, 0, 1.2);
+      background-color: #19B136;
+      color: #dbe3de;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 0.3rem;
+      }
+         
+          }
+
+
+/*************************
+/*************
+/**       main-text_line     **/
+/* NIEUWE RECEPTEN & BLOGS */
+
+      .main-text {
+       width: 100%;
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+       
+       text-shadow:  0 0px 50px rgba(0, 0, 0, .5);
+      }
+
+      .main-text .line {
+        position: relative;
+
+
+      }
+
+      .line::after, .line::before {
+      content: " ";
+      position: absolute;
+      top: .8rem;
+      height: 1.5px;
+      width: 35%;
+      background-color:var(--secondary-color);
+      }
+
+      .line::after {
+      left: 0;
+      }
+
+      .line::before {
+      right: 0;
+      }
+
+
+       /* Extra small devices (phones, 600px and down) */
+         
+       @media only screen and (max-width: 600px) {
+
+        .main-text {
+
+   
+          padding-bottom: 1rem;
+          padding-top: 1rem;
+        
+    
+        }
+
+        .main-text h2{
+           font-size: 1rem;
+      }
+
+        .line::after, .line::before {
+         width: 20%;
+         top: .45rem;
+        }
+       }
+/************************
+          /* Create four equal columns that sits next to each other */
+/*********************************
+/***************************
+/*  recipes-list-grid  */
+ .recipes-list-grid {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2.1%;
+  color: #e9e1dd;
+  }
+  /**********************************************/
+ 
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {}
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {}
+  
+
+  /*******************************/
+  .recipes-img-wrapper {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    border-radius: 4%;
+      box-shadow:  0 0 20px rgba(0, 0, 0, 0.7);
+      margin-bottom: 2rem;
+  }
+  /******heart-wrapper*******/
+  .recipes-heart-wrapper {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #101113;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      box-shadow:  0 0px 20px rgba(0, 0, 0, .5);
+  }
+
+  .recipes-heart-wrapper  .fa {
+    position: absolute;
+    top: 0.5rem;
+    right: -0.4rem;
+    color: rgb(246, 246, 246);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+  }
+  /*********content-wrapper***********/
+  .content p {
+    padding-top: .9rem;
+    width: 90%;
+  }
+
+  .recipes-content-wrapper{/**/
+      text-align: center;
+      color: #101113;
+      background-color: #f5edea;
+      height: 8.5vh;
+    }
+
+
+
+    .recipes-content-wrapper h4 {
+    
+    padding-top: .8rem;
+    }
+  
+    .recipes-content-wrapper__info{/**/
+    text-align: center;
+    background-color: #f5edea;
+    color: #101113;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   padding: 1rem;
+    }
+    .recipes-content-wrapper__info i {
+      max-width: 100vw;
+      padding-left: .8rem;
+    }
+
+  .recipes-img-wrapper > img {
+  width: 100%;
+  height: 24vh;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 2.5);
+
+  }
+
+  .recipes-img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.692);
+    
+    
+  
+  } 
+
+  .recipes-img-wrapper > img,
+  .recipes-img-wrapper > .content
+  {
+  transition: 300ms ease-in-out;
+  }
+
+  .recipes-img-wrapper:hover > img.blur {
+  filter: blur(5px);
+  }
+
+  .recipes-img-wrapper:hover > img.zoom {
+  transform: scale(1.2);
+  }
+
+  .recipes-img-wrapper > .content.fade {
+  opacity: 0;
+  }
+
+  .recipes-img-wrapper:hover > .content.fade {
+  opacity: 1;
+  }
+
+  .recipes-img-wrapper > .content.slide-left {
+  transform: translateX(-101%);
+  }
+
+  .recipes-img-wrapper:hover > .content.slide-left {
+  transform: translateX(0);
+  }
+
+  @media only screen and (max-width: 600px) {
+
+   .recipes-list-grid {
+    max-width: 100vw;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+   gap: .1px;
+    }
+
+         /*******************************/
+       .recipes-img-wrapper {
+        box-shadow:  0 0 20px rgba(42, 40, 40, 0.7);
+     }
+     /******heart-wrapper*******/
+     .recipes-heart-wrapper {
+        background-color: #111112;
+        height: 40px;
+        width: 40px;
+     }
+
+     .recipes-heart-wrapper  .fa {
+      top: 0.6rem;
+      right: 0.1rem;
+      font-size: 1.4rem;
+     }
+     /*********content-wrapper***********/
+     .content p {
+     display: none;
+     }
+
+     .recipes-content-wrapper{/**/
+        display: none;
+      }
+
+
+      .recipes-content-wrapper__info{/**/
+     padding: 1.4rem;
+      }
+      .recipes-content-wrapper__info i {
+        max-width: 100vw;
+        padding-left: 1.8rem;
+      }
+
+     .recipes-img-wrapper > img {
+     height: 30vh;
+     box-shadow:  0 0 10px rgba(0, 0, 0, 1.5);
+
+     }
+
+     .recipes-img-wrapper > .content {  
+      background-color: rgba(0, 0, 0, 0.192);
+     } 
+ 
+     .recipes-img-wrapper > .content.slide-left {
+     transform: none;
+     }
+
+     .recipes-img-wrapper:hover > .content.slide-left {
+     transform: none;
+     }
+
+  }
+
+  /*****************************************
+  /**********************************
+  /*                                       */
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
