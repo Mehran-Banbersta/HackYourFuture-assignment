@@ -30,3 +30,21 @@ document.getElementById('close-nav').addEventListener('click', function(event){
   modal.style.display = "none";
 }
 })
+
+
+///////////////////////
+//
+
+const slider = document.getElementById('slider')
+const prevSlider = document.getElementById('prev')
+const nextSlider = document.getElementById('next')
+
+nextSlider.addEventListener('click', (e) => {
+console.log('click')
+slider.scrollBy(480, 0)
+})
+
+prevSlider.addEventListener('click', (e) => {
+ console.log('click')
+ slider.scrollBy(-700, 0)
+})
