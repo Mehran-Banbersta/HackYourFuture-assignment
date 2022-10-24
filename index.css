@@ -29,7 +29,7 @@
  --body_background: #dbe3de;
  --primary_color: #ede7e4;
  --secondary-color: #19B136;
- --card_background: #ede7e4;
+ --gray-background: #edede7;
  
  /* spacing */
  --base_padding: 0.75rem;
@@ -794,11 +794,7 @@ p {
           }
           
           .sign_up_latest_recipes input[placeholder="email address"] {
-            background-color: var(--body_background);
-            padding: var(--base_padding);
-            width: 20vw;
-            border-radius: var(--base_border-radius);
-            outline: none;
+            background-color: var(--gray-background);
           }
 
           .sign_up_latest_recipes button{
@@ -895,11 +891,12 @@ p {
      
 
       .recipe-table {
-        width: 100%;
-        margin-top: 1rem;
+        max-width: 100%;
+        margin-top: 2rem;
         padding: 1rem;
          padding-top: 1rem;
-         background-color: var(--body_background);
+         background-color: #e7d9d2;
+         box-shadow:  0 0 20px rgba(42, 40, 40, 0.2);
        }
 
       .recipe-table th {
@@ -931,6 +928,7 @@ p {
   
   .recipe-info {
     padding: .0rem;
+    max-width: 100vw;
   }
 
   .recipe-info h2{
@@ -945,11 +943,12 @@ p {
     transform: none;
     transition: none;
   }
-  .recipe-table {
+  table.recipe-table {
+  max-width: 100vw;
    margin: 1rem;
    padding: 1rem;
     padding-top: 1rem;
-    background-color: var(--body_background);
+    background-color: #e7d9d2;
   }
 
   .recipe-table th {
