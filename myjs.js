@@ -5,11 +5,11 @@ document.getElementById('mobile-nav').innerHTML = `
 <nav class="mobile-nav__list">
 <button id="close-nav">x</button>
    <ul>
-    <li><a href="">Home</a></li>
-    <li><a href="">About Us</a></li>
-    <li><a href="">Programs</a></li>
-    <li><a href="">More Info</a></li>
-    <li><a href="">Contact Us</a></li>
+    <li><a href="">HOME</a></li>
+    <li><a href="">GALLERY</a></li>
+    <li><a href="">BLOG</a></li>
+    <li><a href="">PAGES</a></li>
+    <li><a href="">CONTACT</a></li>
    </ul>
   </nav>
  
