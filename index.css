@@ -1404,14 +1404,14 @@ button {
  /*******************
  /*                    */
 /*------------ main_page_8------------------------------*/
-#main_page_8 {
+.ingredient-section {
   position: relative;
   margin-top: 2rem;
   
    }
   
  
-   .main_page_8_image img {
+   .ingredient-section_image img {
      width: 100%;
      height: 60vh;
      object-fit: cover;
@@ -1419,7 +1419,7 @@ button {
      
    }
    
-   .main_page_8_content{
+   .ingredient-section_content{
      
      position: absolute;
      top: 30%;
@@ -1430,17 +1430,17 @@ button {
    color: #fff;
    }
    
-   .main_page_8_content h2{
+   .ingredient-section h2{
    font-size: 3.5em;
    }
    
-   .main_page_8_content h4 {
+   .ingredient-section h4 {
      padding-bottom: .5em;
     
    }
    
-   .main_page_8_content button {
-   background-color: var(--logo-color);
+   .ingredient-section button {
+   background-color: var(--secondary-color);
    padding: 1em;
    cursor: pointer;
    width: 15em;
@@ -1451,73 +1451,69 @@ button {
    border: none;
    }
    
-   .main_page_8_content button:hover,
-   .main_page_8_content button:focus {
+   .ingredient-section button:hover,
+   .ingredient-section button:focus {
      background-color: #fff;
    }
-   /*--------------------footer-------------------------*/
-   footer
+   /***********************************
+   /**************************
+   /*------------------section-about-and-contact-----------------------*/
+   .section-about-and-contact
    {
-  display: flex;
-  justify-content: space-around;
- align-content: center;
-    align-items: center;
-   padding: 1em;
-   width: 100%;
-   background-color: #1d1d1c;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
    
+    padding: 1em;
+    width: 100%;
+    background-color: var(--gray-background);
    }
    /*------------------*/
 
-   .footer_site_map {
+  
    
-   }
-   
-   .footer_site_map ul li {
-    list-style-type: none;
-   }
-   .footer_site_map__link {
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--primary_color);
-   }
  /*------------------*/
-          .footer-contact_me {
+          .section-contact_me_form {
             
             color: var(--primary_color);
-            background-color: rgb(85, 81, 81);
-            width: 50vw;
+            background-color: #32302f;
+            width: 40%;
             padding: 1rem;
             
           }
 
-          .footer-contact_me_info {
-            display: flex;
-            justify-content: space-between;
-          }
+         
 
-          .footer-contact_me h2 {
+          .section-contact_me_form h2 {
             border-bottom: 1.5px solid var(--primary_color);
-          }
-          .footer-contact_me h2,
-          .footer-contact_me h5,
-          .footer-contact_me h5 {
             color: var(--secondary-color);
           }
+         
 
-          .footer-contact_me_paragraph {
-            width: 40%;
-            padding-left: 1rem;
-            padding-top: 1rem;
-          }
+          .section-about-me {
+            width: 60%;
+            padding-right: 1rem;
             
-          .footer-contact_me_form {
-            width: 50%;
-            
+       
            
+            
           }
+
+          .section-about-me_image{
+            max-width: 100%;
+         
+          }
+
+          .section-about-me_image img {
+          width: 100%;
+            height: 30vh;
+            object-fit: cover;
+            object-position: center;
+          }
+            
           
-          .footer-contact_me_form form {
+          
+          .section-about-me_info form {
             padding-left: 1rem;
             padding-right: 1rem;
             width: 100%;
@@ -1551,22 +1547,24 @@ button {
            
           
           /*-------------------------*/
-          
-
-          .footer-social_media a {
-            display: block;
-            padding-top: 1rem;
-            text-decoration: none;
+          footer {
+            background-color: rgb(46, 43, 43);
             color: var(--primary_color);
+            padding: 2rem;
+            max-width: 100vw;
           }
-        /*-----------------*/
  
-        .copy_right {
-          position: relative;
-          padding: .1rem;
-          color: #111;
-          text-align: center;
-          background-color: var(--secondary-color);
+          .copy_right {
+            display: inline-block;
+          }
+        .footer-social_media {
+          float: right;
+        }
+        
+        .footer-social_media a{
+          text-decoration: none;
+          color: var(--primary_color);
+          padding-top: .9rem;
         }
         /*----------------*/
 
@@ -1595,50 +1593,91 @@ button {
           }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-  footer
-   {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
- align-content: center;
-    align-items: center;
-    padding: 1rem;
-   }
 
 
 
-   .footer-contact_me {
-            
-   background: inherit;
-    width: 100%;
- padding: 0rem;
+
+  .ingredient-section {
+    position: relative;
+    margin-top: 2rem;
     
-  }
+     }
+     
+   
 
+     .ingredient-section_image {
+      height: 30vh;
+      box-shadow: inset 0 10px 20px rgba(0, 0, 0, 6.5);
+     
+    }
+     .ingredient-section_image img {
+       height: 30vh;
   
-  .footer-contact_me_form form {
-    padding-left: 0rem;
-    
-  }
+      
+     }
+     
+     .ingredient-section_content{
+       top: 14%;
+   width: calc(100% - 0%);
+     }
+     
+     .ingredient-section h3{
+     font-size: 2rem;
+     padding-bottom: .1rem;
+     }
+     
+     .ingredient-section h4 {
+       
+      
+     }
+     
+     .ingredient-section button {
 
-  .footer-contact_me h2 {
-    padding-left: 1rem;
-  }
-
-   .footer-contact_me_info {
+     padding: 1em;
+  
+     width: 10rem;
+     border-radius: 20px;
+     font-size: .5em;
+ 
+     }
+/*********************************/
+  .section-about-and-contact {
+    display: flex;
     flex-direction: column;
-   }
+  }
 
-   .footer-contact_me_paragraph,
-   .footer-contact_me_form{
+  .section-about-me {
     width: 100%;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
   }
 
-    .footer_site_map {
-     display: none;
+  .section-contact_me_form {
+    width: 100%;
   }
+
+  footer {
+    background-color: rgb(46, 43, 43);
+    color: var(--primary_color);
+    padding: 2rem;
+    max-width: 100vw;
+    text-align: center;
+  }
+
+  .copy_right {
+    display: block;
+  }
+.footer-social_media {
+  float: none;
+}
+
+.footer-social_media a{
+  text-decoration: none;
+  color: var(--primary_color);
+  padding-top: 0rem;
+  font-size: .7rem;
+}
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
