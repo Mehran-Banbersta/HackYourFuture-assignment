@@ -7,7 +7,7 @@ document.getElementById('mobile-nav').innerHTML = `
    <ul>
     <li><a href="#back_to_top">HOME</a></li>
     <li><a href="">ABOUT ME</a></li>
-    <li><a href="!#">RECIPES</a></li>
+    <li><a href="#">RECIPES</a></li>
     <li><a href="#ingredients__link">INGREDIENTS</a></li>
     <li><a href="#Contact-me">CONTACT ME</a></li>
    </ul>
