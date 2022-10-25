@@ -1071,7 +1071,7 @@ button {
       }
 }
         /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 710px) {
   .recipe-content-grid-top,
   .recipe-content-grid-bottom {
     display: grid;
@@ -1263,7 +1263,44 @@ button {
   /**********************************
   /*                                       */
 
-
+  @media only screen and (max-width: 710px) {
+    #section-slider {
+      height: auto;
+      overflow: hidden;
+    }
+    .img-slider {
+      position: relative;
+        margin: .2rem;
+        flex: none;
+       height: 90vh;
+       }
+    
+      .content-slider {
+        padding: 1rem;
+        width: 100%;
+        
+      }
+      
+      
+       /***********************/
+       
+       .img-slider > img {
+        display: block;
+        width: 50vw;
+        height: 30%;
+       cursor: pointer;
+     
+       object-fit: cover;
+       object-position: center;
+       
+       position: relative;
+      
+       }
+       .content-slider {
+        padding: 1rem;
+        width: 100vw;
+      }
+  }
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
