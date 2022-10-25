@@ -78,8 +78,9 @@ padding-top: 1rem;
 padding-bottom: 1rem;
 }
 
-p {
-
+button {
+   outline: none;
+   border: none;
 }
 /************************  
 /************* 
@@ -215,7 +216,7 @@ p {
           width: 100%;
           top: 3rem;
           z-index: 111111;
-         
+         display: none;
         }
 
         #modal nav ul {
@@ -1100,6 +1101,11 @@ p {
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+  #section-slider {
+    height: 55vh;
+  }
+
   #slider {
     display: flex;
     height: auto;
@@ -1109,7 +1115,7 @@ p {
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
     scroll-behavior: smooth;
-  
+
   
    }
    
@@ -1117,7 +1123,7 @@ p {
   position: relative;
     margin: .2rem;
     flex: none;
-   
+   height: 90vh;
    }
 
   .content-slider {
@@ -1155,7 +1161,7 @@ p {
    
    .slider-btn button {
     border: none;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(93, 89, 89);
     color: #fff;
     cursor: pointer;
     height: 40px;
@@ -1163,7 +1169,7 @@ p {
     font-size: 1.5rem;
     outline: none;
     transition: all ease-in-out 0.5s;
-   opacity: .6;
+   opacity: .8;
    border-radius: 50%;
    }
    
@@ -1373,7 +1379,7 @@ p {
             background-color: #5e6065;
             color: #dbe3de;
             cursor: pointer;
-        
+          
             border-radius: 50%;
             border: none;
             font-size: 1.2rem;
@@ -1393,15 +1399,27 @@ p {
   justify-content: space-around;
  align-content: center;
     align-items: center;
-    padding: 0rem;
+    padding: 1rem;
    }
+
+
 
    .footer-contact_me {
             
-   
+   background: inherit;
     width: 100%;
-    padding: .1rem;
+ padding: 0rem;
     
+  }
+
+  
+  .footer-contact_me_form form {
+    padding-left: 0rem;
+    
+  }
+
+  .footer-contact_me h2 {
+    padding-left: 1rem;
   }
 
    .footer-contact_me_info {

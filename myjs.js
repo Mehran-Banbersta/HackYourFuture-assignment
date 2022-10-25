@@ -41,10 +41,10 @@ const nextSlider = document.getElementById('next')
 
 nextSlider.addEventListener('click', (e) => {
 console.log('click')
-slider.scrollBy(480, 0)
+slider.scrollBy(470, 0)
 })
 
 prevSlider.addEventListener('click', (e) => {
  console.log('click')
- slider.scrollBy(-700, 0)
+ slider.scrollBy(-480, 0)
 })
