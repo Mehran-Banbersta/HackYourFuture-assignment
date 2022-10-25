@@ -5,9 +5,9 @@ document.getElementById('mobile-nav').innerHTML = `
 <nav class="mobile-nav__list">
 <button id="close-nav">x</button>
    <ul>
-    <li><a href="#back_to_top">HOME</a></li>
-    <li><a href="">ABOUT ME</a></li>
-    <li><a href="#">RECIPES</a></li>
+    <li><a href="#home_link">HOME</a></li>
+    <li><a href="#about-me">ABOUT ME</a></li>
+    <li><a href="#recipe_link">RECIPES</a></li>
     <li><a href="#ingredients__link">INGREDIENTS</a></li>
     <li><a href="#Contact-me">CONTACT ME</a></li>
    </ul>

@@ -1201,7 +1201,7 @@ button {
    .img-slider > .content-slider {
     position: absolute;
     padding: 2rem;
-    background-color: #19B136;
+    background-color: var(--gray-background);
     max-width: 30vw;  
     padding-left: 1rem;
     left: 1rem;
