@@ -27,11 +27,11 @@ document.getElementById('mobile-nav').innerHTML = `
 <nav class="mobile-nav__list">
 <button id="close-nav">x</button>
    <ul>
-    <li><a href="#home_link">HOME</a></li>
+    <li><a href="#home">HOME</a></li>
     <li><a href="#about-me">ABOUT ME</a></li>
-    <li><a href="#recipe_link">RECIPES</a></li>
-    <li><a href="#ingredients__link">INGREDIENTS</a></li>
-    <li><a href="#Contact-me">CONTACT ME</a></li>
+    <li><a href="#recipe">RECIPES</a></li>
+    <li><a href="#ingredients">INGREDIENTS</a></li>
+    <li><a href="#contact-me">CONTACT ME</a></li>
    </ul>
   </nav>
  

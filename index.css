@@ -1,9 +1,3 @@
-
-
-
-
-
-
 /********** CSS universal selectors
 /****** It can be used to select any and all types of elements in an HTML page
 /** reset all padding and margin **/
@@ -62,7 +56,7 @@
 
 
 body {
- font-family: var(--ff-primary);
+ font-family: Georgia, 'Times New Roman', Times, serif;
  font-weight: 300;
  font-size: 1.3125rem;
  line-height: 1.3;
@@ -292,8 +286,10 @@ button {
               .menu-link-01 {
               display: inline-block;
               position: relative;
-
+              width: 220px;
               }
+
+             
 
               .dropdown-menu {
               position: absolute;
@@ -301,8 +297,8 @@ button {
               color: #101113;
               z-index: 1;
               display: none;
-              width: 40vw;
-              height: 30vh;
+             
+              height: 40vh;
               top: 1.3rem;
               left: 1rem;
               padding: var(--base_padding);
@@ -313,7 +309,7 @@ button {
                 display: block;
                 text-align: start;
                 text-decoration: none;
-              
+                
               
               }
 
@@ -540,7 +536,6 @@ button {
       .main-text {
        width: 100%;
         text-align: center;
-       text-shadow:  0 0px 50px rgba(0, 0, 0, .5);
        padding-bottom: 1rem;
       }
 
@@ -576,7 +571,7 @@ button {
 
    
           padding-bottom: 1rem;
-          padding-top: 1rem;
+          padding-top: .1rem;
       
     
         }
@@ -609,9 +604,9 @@ button {
       position: relative;
       overflow: hidden;
       cursor: pointer;
-      border-radius: 4%;
+      border-radius: 10px;
       box-shadow:  0 0 20px rgba(0, 0, 0, 0.7);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
   }
   /******heart-wrapper*******/
   .recipes-heart-wrapper {
@@ -638,7 +633,7 @@ button {
   /*********content-wrapper***********/
   .content p {
     padding-top: .7rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width: 90%;
   }
 
@@ -647,16 +642,14 @@ button {
   justify-content: space-around;
   align-items: center;
   color: #101113;
-     background-color: var(--primary_color);
+  
     }
   
     .recipes-content-wrapper__bottom .fa-star {
       color: var(--secondary-color);
     }
 
-    .recipes-content-wrapper__bottom h4 {
-    padding-top: .8rem;
-    }
+    
 
     .recipes-content-wrapper__info a,
     .recipes-content-wrapper__info .fa {
@@ -679,10 +672,14 @@ button {
     padding: 0rem 1rem;
     }
    
+    .recipes-img-wrapper {
+    
+      padding-bottom: .5rem;
+    }
 
   .recipes-img-wrapper > img {
   width: 100%;
-  height: 28vh;
+  height: 30vh;
   object-fit: cover;
   object-position: center;
   cursor: pointer;
@@ -696,9 +693,6 @@ button {
     font-size: 1rem;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.692);
-    
-    
-  
   } 
 
   .recipes-img-wrapper > img,
@@ -743,10 +737,8 @@ button {
       margin-top: -.7rem;
       }
 
-      /*******************************/
-      .recipes-content-wrapper__bottom {/**/
-     
-          }
+  
+   
  
   }
 
@@ -795,15 +787,6 @@ button {
       font-size: 1.1rem;
      }
      /*********content-wrapper***********/
-
-      
-
-     
-
-     
- 
-    
-
   }
 
 
@@ -1255,22 +1238,8 @@ button {
   /*                                       */
 
   @media only screen and (max-width: 710px) {
-    #section-slider {
-      margin-top: 2rem;
- 
-    }
-    
-  
-    
-    #slider {
-     
-    }
-    
-    .img-slider {
- 
-    
    
-    }
+  
 
      /***********************/
      
@@ -1318,9 +1287,7 @@ button {
   
 
   
-  #slider {
-   
-  }
+  
   
   .img-slider {
 
@@ -1352,56 +1319,56 @@ button {
  /*******************
  /*                    */
 /*------------ main_page_8------------------------------*/
-.ingredient-section {
-  position: relative;
-
-  
-   }
-  
+    .ingredient-section {
+      position: relative;
+      }
+      
  
    .ingredient-section_image img {
      width: 100%;
      height: 60vh;
      object-fit: cover;
      object-position: center;
-     
+   
    }
    
    .ingredient-section_content{
      
      position: absolute;
      top: 30%;
- width: calc(100% - 0%);
+      width: calc(100% - 0%);
  
   
    text-align: center;
    color: #fff;
    }
    
-   .ingredient-section h2{
-   font-size: 3.5em;
+   .ingredient-section h3{
+   font-size: 2.5rem;
+
    }
    
    .ingredient-section h4 {
-     padding-bottom: .5em;
-    
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
    }
    
    .ingredient-section button {
    background-color: var(--secondary-color);
-   padding: 1em;
+   color: var(--primary_color);
+   padding: 1rem 2.5rem;
    cursor: pointer;
-   width: 15em;
-   border-radius: 2em;
-   font-size: 1em;
+  padding-top: 1rem;
+   border-radius: 20px;
+   font-size: 1rem;
    font-weight: bold;
-   outline: none;
-   border: none;
-   }
    
+   }
+   .btn_contact_me button:hover,
    .ingredient-section button:hover,
    .ingredient-section button:focus {
      background-color: #fff;
+     color: #111;
    }
    /***********************************
    /**************************
@@ -1416,7 +1383,7 @@ button {
     width: 100%;
     background-color: var(--gray-background);
    }
-   /*------------------*/
+  
 
   
    
@@ -1478,6 +1445,10 @@ button {
           
           .btn_contact_me button {
             margin-top: 1rem;
+            color: var(--primary_color);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
             background-color: var(--secondary-color);
            }
           
@@ -1546,33 +1517,33 @@ button {
 
 
   .ingredient-section {
-    position: relative;
-    margin-top: 2rem;
-    
+  
+    margin-top: 1rem;
      }
      
    
 
      .ingredient-section_image {
-      height: 30vh;
-      box-shadow: inset 0 10px 20px rgba(0, 0, 0, 6.5);
-     
+      height: 40vh;
     }
      .ingredient-section_image img {
-       height: 30vh;
-  
-      
+       height: 40vh;
      }
      
      .ingredient-section_content{
-       top: 14%;
+       top: 22%;
    width: calc(100% - 0%);
      }
      
      .ingredient-section h3{
-     font-size: 2rem;
+     font-size: 1.8rem;
      padding-bottom: .1rem;
      }
+
+     .ingredient-section h4{
+      font-size: 1.2rem;
+      padding-bottom: 1.2rem;
+      }
      
      
      .ingredient-section button {
