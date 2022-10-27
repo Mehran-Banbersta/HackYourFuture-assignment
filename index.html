@@ -9,635 +9,584 @@
  <title>Vega Food</title>
 </head>
 <body>
- <header id="home">
-        <!----Mobile nav for small display (codes are in .js )------->
-        <div id="mobile-nav"></div>
-      <div class="header-top">
-         <!-----header-social------->  
-         <div class="header-social-icons">
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-whatsapp"></i>
-           
-         </div>
-          <!-----header-logo------->  
-         <div class="header-logo">
-            <h1  class="logo"><i class="fab fa-vimeo-v"></i>ega</h1>
-         </div>
-         <!-----header-btn-user header-btn-user__mobile------->  
-         <div class="header-btn-user header-btn-user__mobile">
-            <button><i class="far fa-user"></i></button>
-            <button><i class="far fa-heart"></i></button>
-         </div>
-
-         <!---------------------------------->
-         <div class="mobile-menu-btn" >
- 
-            <span id="open-nav" class="mobile-menu-btn__burger"></span>
-            <span class="mobile-menu-btn__name"></span>
-        </div>
-       
-      </div>
+   <!-------------header---------------->
    
-      <!---------nav------->
-      
-      <nav class="header-nav">
-         <ul>
-            <li>
-               <a class="header-nav_a active" href="#">HOME</a>
-            </li>
-            <li>
-               <a class="header-nav_a" href="#about-me">ABOUT ME</a>
-            </li>
-            <li class="menu-link-01">
-               <a class="header-nav_a" href="#">RECIPES</a>
-               <ul class="dropdown-menu slide-up">
-                  <li><a href="">gdfdf</a></li>
-                  <li><a href="">fdfdfdd</a></li>
-                  <li><a href="">ddfdf</a></li>
-                  <li><a href="">wsds</a></li>
-                  <li><a href="">uwewewew</a></li>
-               </ul>
-            
-            </li>
-            <li>
-               <a class="header-nav_a" href="#ingredients__link">INGREDIENTS</a>
-            </li>
-            <li>
-               <a class="header-nav_a" href="#contact-me">CONTACT ME</a>
-            </li>
-         </ul>
-      </nav>
+   <header id="home">
      
-    
-
-  
-    <!------------------------------------>
-       <div class="header-content">
-        
-           
-            <h2>Delicious <span class="header-content__span">Recipes</span></h2>
-             
-             <div class="header-content__search"> 
-                <input type="text" placeholder="Search for your recipe">
-                <button><i class="fas fa-search"></i></button>
-             </div>
-             <h5>WIDE OPTIONS OF CHOICE</h5>
+     <!----Mobile nav for small display (codes are in .js )------->
+     
+     <div id="mobile-nav"></div>
+     
+     <!------------header-top----------------->
+     
+     <div class="header-top">
+       
+       <!-----header-social------->
+       
+       <div class="header-social-icons">
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-facebook"></i>
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-whatsapp"></i>
        </div>
-    <!------------------------------------>
+       
+       <!-----header-logo------->
+       
+       <div class="header-logo">
+         <h1 class="logo"><i class="fab fa-vimeo-v"></i>ega <a href="href="#home""></a></h1>
+       </div>
+       
+       <!-----header-btn-user header-btn-user__mobile------->
+       <div class="header-btn-user header-btn-user__mobile">
+         <button><i class="far fa-user"></i></button>
+         <button><i class="far fa-heart"></i></button>
+       </div>
+       <!----------------mobile-menu-btn------------------>
+       
+       <div class="mobile-menu-btn">
+         <span id="open-nav" class="mobile-menu-btn__burger"></span>
+         <span class="mobile-menu-btn__name"></span>
+       </div>
  
-        <!----Mobile nav for small display (codes are in .js )------->
-      <div id="mobile-nav">
-
-      </div>
-</header>
-
-<main>
-    <!----------------------------------->
-     <!-------------------------------------->
-      <!------------main-text------------------->
-        
-          <div id="container">
-            <article class="main-text">
-              <h5 class="main-text__info line">NIEUWE RECEPTEN & BLOGS</h5>
-            </article>
+     </div>
+ 
+     <!---------header-nav desktop------->
+ 
+     <nav class="header-nav">
+       <ul>
+         <li>
+           <a class="header-nav_a active" href="#home">HOME</a>
+         </li>
+         <li>
+           <a class="header-nav_a" href="#about-me">ABOUT ME</a>
+         </li>
+         <li>
+           <a class="header-nav_a" href="#recipe">RECIPES</a>
+         </li>
+         <li>
+           <a class="header-nav_a" href="#ingredients">INGREDIENTS</a>
+         </li>
+         <li>
+           <a class="header-nav_a" href="#contact-me">CONTACT ME</a>
+         </li>
+       </ul>
+     </nav>
+ 
+     <!------------contains search bar and heading------------------------>
+     
+     <div class="header-content">
+ 
+       <h2>Delicious <span class="header-content__span">Recipes</span></h2>
+       <div class="header-content__search">
+         <input type="text" placeholder="Search for your recipe">
+         <button><i class="fas fa-search"></i></button>
+       </div>
+       <h5>WIDE OPTIONS OF CHOICE</h5>
+     </div>
+     
+   </header>
+ 
+   <main>
+     
+     <!---------------container--put this article in middle of the pge--------------------->
+        <!------------main-text------------------->
+ 
+     <div id="container">
+       <article class="main-text">
+         <h5 class="main-text__info line">NIEUWE RECEPTEN & BLOGS</h5>
+       </article>
+     </div>
+     
+     <!--------------recipes-list-grid---contains 6 box of reipes------------------>
+     <div id="container"> <!---------container----------->
+ 
+       <article class="recipes-list-grid">
+         <div class="recipes-img-wrapper">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/07/Aushi-3-IG_970-37faa20.jpg?quality=90&webp=true&resize=975,649" alt="Kolamba’s parippu">
+           <div class="recipes-heart-wrapper">
+             <i class="fa fa-heart"></i>
            </div>
-      
-      <!----x------------------------------------>
-     <!----x---------------------------------->
-    <!----x-------------------------------->
-    <div id="container">
-
-     <article class="recipes-list-grid">
-
-         
-
-         <div class="recipes-img-wrapper" id="recipe-01_link">
-               <img  src="https://images.immediate.co.uk/production/volatile/sites/2/2021/07/Aushi-3-IG_970-37faa20.jpg?quality=90&webp=true&resize=975,649" alt="">
-               <div class="recipes-heart-wrapper">
-                  <i class="fa fa-heart"></i>
-               </div> 
-            <div class="content slide-left">
-               <div class="recipes-heart-wrapper">
-                  <i class="fa fa-heart"></i>
-               </div> 
-                  <p>
-                     This lentil curry is spiced with
-                      mustard seeds, chilli powder, 
-                      curry leaves and cinnamon, 
-                      creating a delicate and warming 
-                      curry that’ll become a family
-                       favourite in no time. This recipe
-                      comes from Soho restaurant
-                       Kolamba.
-                   </p>
-                   <div class="recipes-content-wrapper__info">
-                      <span><i class="fa fa-utensils"></i> Main dish</span>
-                     <span><i class="fa fa-clock-o"></i> 25 min</span>
-                      <a href="#Kolambas-parippu">More info</a>
-                   </div>
-            </div>
-                  <div class="recipes-content-wrapper__bottom">
-                     <h5>Kolamba’s parippu </h5>
-                     <span>4.5 <i class="fa fa-star"></i></span>
-                  </div>
-         </div>
-          
-         <div class="recipes-img-wrapper" id="recipe">
-            <img  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/curried-cod-d8ee619.jpg?quality=90&webp=true&resize=440,400" alt="">
-            <div class="recipes-heart-wrapper">
+           <div class="content slide-left">
+             <div class="recipes-heart-wrapper">
                <i class="fa fa-heart"></i>
-            </div> 
-             <div class="content slide-left">
-            <div class="recipes-heart-wrapper">
-               <i class="fa fa-heart"></i>
-            </div> 
-               <p>An easy-to-prepare midweek one-pot with cod fillet, chickpeas, ginger and spices - it's healthy, low calorie and packed with iron too
-                </p>
-                <div class="recipes-content-wrapper__info">
-                  <span><i class="fa fa-utensils"></i> Main dish</span>
-                  <span><i class="fa fa-clock-o"></i> 25 min</span>
-                   <a href="#Green-bean-curry">More info</a>
-                </div>
-               </div>
-               <div class="recipes-content-wrapper__bottom">
-                  <h5>Curried cod</h5>
-                  <span>5 <i class="fa fa-star"></i></span>
-               </div>
-      </div>
-
-      <div class="recipes-img-wrapper">
-         <img  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/spanish-rice-with-squid-prawn-fennel-e8153a5.jpg?quality=90&webp=true&resize=440,400" alt="">
-         <div class="recipes-heart-wrapper">
-            <i class="fa fa-heart"></i>
-         </div> 
-          <div class="content slide-left">
-         <div class="recipes-heart-wrapper">
-            <i class="fa fa-heart"></i>
-         </div> 
-            <p>Make this Spanish paella-style 
-               dish with squid ink for dramatic
-                black rice – but if you can't find it, 
-                use saffron instead for
-                the more familiar yellow look
+             </div>
+             <p>
+               This lentil curry is spiced with
+               mustard seeds, chilli powder,
+               curry leaves and cinnamon,
+               creating a delicate and warming
+               curry that’ll become a family
+               favourite in no time. This recipe
+               comes from Soho restaurant
+               Kolamba.
              </p>
              <div class="recipes-content-wrapper__info">
                <span><i class="fa fa-utensils"></i> Main dish</span>
                <span><i class="fa fa-clock-o"></i> 25 min</span>
-                <a href="#Kolambas-parippu">More info</a>
+               <a href="#Kolambas-parippu">More info</a>
              </div>
-            </div>
-            <div class="recipes-content-wrapper__bottom">
-               <h5>Spanish rice with squid</h5>
-               <span>4.1 <i class="fa fa-star"></i></span>
-            </div>
-      </div>
-
-
-        
-         <div class="recipes-img-wrapper">
-            <img  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/09/Amatriciana-chicken-traybake--56d13af.jpg?quality=45&resize=960,872" alt="">
-            <div class="recipes-heart-wrapper">
-               <i class="fa fa-heart"></i>
-            </div> 
-            <div class="content slide-left">
-            <div class="recipes-heart-wrapper">
-               <i class="fa fa-heart"></i>
-            </div> 
-               <p>Traybakes are a quick and easy all-in-one dinner 
-                  for busy weeknights and lazy weekends. 
-                  Try our selection of tasty meat,
-                   fish, veggie and vegan traybakes
-               </p>
-               <div class="recipes-content-wrapper__info">
-                  <span><i class="fa fa-utensils"></i> Main dish</span>
-                  <span><i class="fa fa-clock-o"></i> 25 min</span>
-                  <a href="#Kolambas-parippu">More info</a>
-               </div>
-               </div>
-               <div class="recipes-content-wrapper__bottom">
-                  <h5>Traybake</h5>
-                  <span>4.8 <i class="fa fa-star"></i></span>
-               </div>
-      </div>
-
-
-
-         <div class="recipes-img-wrapper">
-            <img  src="https://images.immediate.co.uk/production/volatile/sites/2/2021/10/Olive_Everyday_Healthy_Quick_Paneer_and_Chickpea_Curry_DW-acd95bb.jpg?quality=90&webp=true&crop=7px,2188px,4568px,3043px&resize=975,649" alt="">
-            <div class="recipes-heart-wrapper">
-               <i class="fa fa-heart"></i>
-            </div> 
-            <div class="content slide-left">
-            <div class="recipes-heart-wrapper">
-               <i class="fa fa-heart"></i>
-            </div> 
-               <p>
-                  Swap chicken for tender cauli and
-                   mix with filling chickpeas and 
-                   earthy spinach in this
-                   meat-free spin on a curry classic.
-               </p>
-               <div class="recipes-content-wrapper__info">
-                  <span><i class="fa fa-utensils"></i> Main dish</span>
-                  <span><i class="fa fa-clock-o"></i> 25 min</span>
-                  <a href="#Green-bean-curry">More info</a>
-               </div>
-               </div>
-               <div class="recipes-content-wrapper__bottom">
-                  <h5>Veggie butter curry</h5>
-                  <span>4.5 <i class="fa fa-star"></i></span>
-               </div>
+           </div>
+           <div class="recipes-content-wrapper__bottom">
+             <h5>Kolamba’s parippu</h5>
+             <span>4.5 <i class="fa fa-star"></i></span>
+           </div>
          </div>
-
-      <div class="recipes-img-wrapper">
-         <img  src="https://images.immediate.co.uk/production/volatile/sites/2/2021/07/Olive_AugustSeasonal_11.6.21_FreshTomatoGreenBeanCurry-114-82e2ca4.jpg?quality=90&webp=true&resize=975,649" alt="">
-         <div class="recipes-heart-wrapper">
-            <i class="fa fa-heart"></i>
-         </div> 
-         <div class="content slide-left">
-         <div class="recipes-heart-wrapper">
-            <i class="fa fa-heart"></i>
-         </div> 
-            <p>
-               This aromatic green bean curry,
-                adapted from Laxmi Khurana’s An
-                 Indian Housewife’s Recipe Book,
-                  makes the perfect veggie main
-                which the whole family will enjoy.
-            </p>
-            <div class="recipes-content-wrapper__info">
+ 
+         <div class="recipes-img-wrapper" id="recipe">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/curried-cod-d8ee619.jpg?quality=90&webp=true&resize=440,400" alt="Curried cod<">
+           <div class="recipes-heart-wrapper">
+             <i class="fa fa-heart"></i>
+           </div>
+           <div class="content slide-left">
+             <div class="recipes-heart-wrapper">
+               <i class="fa fa-heart"></i>
+             </div>
+             <p>An easy-to-prepare midweek one-pot with cod fillet, chickpeas, ginger and spices - it's healthy, low calorie and packed with iron too
+             </p>
+             <div class="recipes-content-wrapper__info">
                <span><i class="fa fa-utensils"></i> Main dish</span>
                <span><i class="fa fa-clock-o"></i> 25 min</span>
                <a href="#Green-bean-curry">More info</a>
-            </div>
-            </div>
-            <div class="recipes-content-wrapper__bottom">
-               <h5>Green bean curry</h5>
-               <span>5 <i class="fa fa-star"></i></span>
-            </div>   
+             </div>
+           </div>
+           <div class="recipes-content-wrapper__bottom">
+             <h5>Curried cod</h5>
+             <span>5 <i class="fa fa-star"></i></span>
+           </div>
          </div>
-
-         
-     </article>
-      
-    </div>
+ 
+         <div class="recipes-img-wrapper">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/spanish-rice-with-squid-prawn-fennel-e8153a5.jpg?quality=90&webp=true&resize=440,400" alt="Spanish rice with squid">
+           <div class="recipes-heart-wrapper">
+             <i class="fa fa-heart"></i>
+           </div>
+           <div class="content slide-left">
+             <div class="recipes-heart-wrapper">
+               <i class="fa fa-heart"></i>
+             </div>
+             <p>Make this Spanish paella-style
+               dish with squid ink for dramatic
+               black rice – but if you can't find it,
+               use saffron instead for
+               the more familiar yellow look
+             </p>
+             <div class="recipes-content-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i> 25 min</span>
+               <a href="#Kolambas-parippu">More info</a>
+             </div>
+           </div>
+           <div class="recipes-content-wrapper__bottom">
+             <h5>Spanish rice with squid</h5>
+             <span>4.1 <i class="fa fa-star"></i></span>
+           </div>
+         </div>
+ 
+         <div class="recipes-img-wrapper">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/09/Amatriciana-chicken-traybake--56d13af.jpg?quality=45&resize=960,872" alt="Traybake">
+           <div class="recipes-heart-wrapper">
+             <i class="fa fa-heart"></i>
+           </div>
+           <div class="content slide-left">
+             <div class="recipes-heart-wrapper">
+               <i class="fa fa-heart"></i>
+             </div>
+             <p>Traybakes are a quick and easy all-in-one dinner
+               for busy weeknights and lazy weekends.
+               Try our selection of tasty meat,
+               fish, veggie and vegan traybakes
+             </p>
+             <div class="recipes-content-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i> 25 min</span>
+               <a href="#Kolambas-parippu">More info</a>
+             </div>
+           </div>
+           <div class="recipes-content-wrapper__bottom">
+             <h5>Traybake</h5>
+             <span>4.8 <i class="fa fa-star"></i></span>
+           </div>
+         </div>
+ 
+         <div class="recipes-img-wrapper">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/10/Olive_Everyday_Healthy_Quick_Paneer_and_Chickpea_Curry_DW-acd95bb.jpg?quality=90&webp=true&crop=7px,2188px,4568px,3043px&resize=975,649" alt="">
+           <div class="recipes-heart-wrapper">
+             <i class="fa fa-heart"></i>
+           </div>
+           <div class="content slide-left">
+             <div class="recipes-heart-wrapper">
+               <i class="fa fa-heart"></i>
+             </div>
+             <p>
+               Swap chicken for tender cauli and
+               mix with filling chickpeas and
+               earthy spinach in this
+               meat-free spin on a curry classic.
+             </p>
+             <div class="recipes-content-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i> 25 min</span>
+               <a href="#Green-bean-curry">More info</a>
+             </div>
+           </div>
+           <div class="recipes-content-wrapper__bottom">
+             <h5>Veggie butter curry</h5>
+             <span>4.5 <i class="fa fa-star"></i></span>
+           </div>
+         </div>
+ 
+         <div class="recipes-img-wrapper">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/07/Olive_AugustSeasonal_11.6.21_FreshTomatoGreenBeanCurry-114-82e2ca4.jpg?quality=90&webp=true&resize=975,649" alt="Green bean curry">
+           <div class="recipes-heart-wrapper">
+             <i class="fa fa-heart"></i>
+           </div>
+           <div class="content slide-left">
+             <div class="recipes-heart-wrapper">
+               <i class="fa fa-heart"></i>
+             </div>
+             <p>
+               This aromatic green bean curry,
+               adapted from Laxmi Khurana’s An
+               Indian Housewife’s Recipe Book,
+               makes the perfect veggie main
+               which the whole family will enjoy.
+             </p>
+             <div class="recipes-content-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i> 25 min</span>
+               <a href="#Green-bean-curry">More info</a>
+             </div>
+           </div>
+           <div class="recipes-content-wrapper__bottom">
+             <h5>Green bean curry</h5>
+             <span>5 <i class="fa fa-star"></i></span>
+           </div>
+         </div>
+       </article>
+     </div><!-----container--------->
      
- <!------------------------>
-     <!---------------------------------->  
-         
-    <!----------------->
-
-      <!----------------->
+     <!---------------sign_up--include inout form sending email----------------->
+     
      <article class="sign_up">
-        <div class="sign_up_latest_recipes">
-            <div class="sign_up_latest_recipes__title">
-               <h4>GET THE LATEST RECIPES RIGHT IN YOUR INBOX:&nbsp;&nbsp;</h4>
-            </div>
-             <div class="sign_up_latest_recipes__info">
-                  <input type="email" placeholder="email address">
-                  <button>sign_up <i class="fas fa-sign-in-alt"></i></button>
-            </div>
-        </div>
+       <div class="sign_up_latest_recipes">
+         <div class="sign_up_latest_recipes__title">
+           <h4>GET THE LATEST RECIPES RIGHT IN YOUR INBOX:</h4>
+         </div>
+         <div class="sign_up_latest_recipes__info">
+           <input type="email" placeholder="email address">
+           <button>sign_up <i class="fas fa-sign-in-alt"></i></button>
+         </div>
+       </div>
      </article>
  
-   <!------------------------------->
-    <!------------------------------->
-<div id="container">
-
-    <article class="recipe-content-grid-top" id="Kolambas-parippu">
-
-            <div class="recipe-content__img-wrapper">
-               <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/07/Aushi-3-IG_970-37faa20.jpg?quality=90&webp=true&resize=375,341" alt="">
-            </div>
-
-            <div class="recipe-info">
-                 <h2>Kolamba’s parippu</h2>
-
-                 <div class="recipe-info_icons">
-                  <span><i class="fa fa-utensils"></i> Main dish</span>
-                  <span><i class="fa fa-clock-o"></i></i> 25 min</span>
-                  <span><i class="fa fa-star"></i>4.5</span>
-                 </div>
-
-                  <p>
-                     The co-founder of Kolamba in London’s
-                      Soho shares this recipe with us
-                       from the restaurant's kitchen.
-                        A lentil curry spiced with mustard seeds,
-                         chilli powder, curry leaves and cinnamon, 
-                     with layers of delicate flavour
-            </p>
-         
-            <div class="recipe-table">
-               <table>
-                  <thead>
-                        <tr>
-                           <th>ENERGY</th>
-                           <th>CALORIES</th>
-                           <th>FIBRE</th>
-                           <th>PROTEIN</th>
-                           <th>CARBS</th>
-                        
-                        </tr>
-                  </thead>
-                        <tr>
-                           <td>525</td>
-                           <td>2196 kj</td>
-                           <td>21.4g</td>
-                           <td>9.2g</td>
-                           <td>27.1g</td>
-                        </tr>
-                </table>
-            </div>
-               
-             
-                  
-            </div>   
-         </article>   
-          
-   <article class="recipe-content-grid-bottom" id="Green-bean-curry">
-
-      <div class="recipe-content__img-wrapper">
-         <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/07/Olive_AugustSeasonal_11.6.21_FreshTomatoGreenBeanCurry-114-82e2ca4.jpg?quality=90&webp=true&resize=1100,733" alt="">
-      </div>
-
-             <div class="recipe-info">
-               <h2>Green bean curry</h2>
-                <div class="recipe-info_icons">
-                  <span><i class="fa fa-utensils"></i> Main dish</span>
-                  <span><i class="fa fa-clock-o"></i></i> 25 min</span>
-                  <span><i class="fa fa-star"></i>5</span>
-                 </div>
-                 <p>
-                  This is a perfect main or part of a spread,
-                   adapted from Laxmi Khurana’s An Indian Housewife’s
-                    Recipe Book. You can use frozen beans, but use fresh
-                     while they're at
-                   their best in the summer to add crunch
-               
-            </p>
-         
-         <div class="recipe-table">
-            <table >
+  
+     <!-------------recipe-content-grid---contains 2 box of content of reipes------------------>
+     <div id="container"><!-----------container----------------->
+ 
+       <article class="recipe-content-grid-top" id="Kolambas-parippu">
+ 
+         <div class="recipe-content__img-wrapper">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/07/Aushi-3-IG_970-37faa20.jpg?quality=90&webp=true&resize=375,341" alt="">
+         </div>
+ 
+         <div class="recipe-info">
+           <h2>Kolamba’s parippu</h2>
+ 
+           <div class="recipe-info_icons">
+             <span><i class="fa fa-utensils"></i> Main dish</span>
+             <span><i class="fa fa-clock-o"></i></i> 25 min</span>
+             <span><i class="fa fa-star"></i>4.5</span>
+           </div>
+ 
+           <p>
+             The co-founder of Kolamba in London’s
+             Soho shares this recipe with us
+             from the restaurant's kitchen.
+             A lentil curry spiced with mustard seeds,
+             chilli powder, curry leaves and cinnamon,
+             with layers of delicate flavour
+           </p>
+ 
+           <div class="recipe-table">
+             <table>
                <thead>
-                     <tr>
-                        <th>ENERGY</th>
-                        <th>CALORIES</th>
-                        <th>FIBRE</th>
-                        <th>PROTEIN</th>
-                        <th>CARBS</th>
-                     
-                     </tr>
+                 <tr>
+                   <th>ENERGY</th>
+                   <th>CALORIES</th>
+                   <th>FIBRE</th>
+                   <th>PROTEIN</th>
+                   <th>CARBS</th>
+ 
+                 </tr>
                </thead>
-                     <tr>
-                        <td>525</td>
-                        <td>2196 kj</td>
-                        <td>21.4g</td>
-                        <td>9.2g</td>
-                        <td>27.1g</td>
-                     </tr>
+               <tr>
+                 <td>525</td>
+                 <td>2196 kj</td>
+                 <td>21.4g</td>
+                 <td>9.2g</td>
+                 <td>27.1g</td>
+               </tr>
              </table>
-         </div>
-               
-        </div>
-    </article>
-   </div>
-            
-            
-     <!------------------------------->
-
-     <article id="section-slider">
-     
-        <div id="slider">
-        
-          <div class="img-slider">
-          
-             <img src="https://images.immediate.co.uk/production/volatile/sites/2/2019/12/Vegan-jackfruit-massaman-curry-V2-29c66ff-scaled.jpg?quality=90&webp=true&resize=1100,733" alt="">
-             <div class="content-slider">
-                <h4>Vegan jackfruit massaman curry</h4>
-               <p>A tin of jackfruit (which you can pick up at 
-                  almost any supermarket) is the magic ingredient
-                   in this vegan
-                   massaman curry, served with salted peanuts.
-               </p>
-
-               <div class="recipes-slider-wrapper__info">
-                  <span><i class="fa fa-utensils"></i> Main dish</span>
-                  <span><i class="fa fa-clock-o"></i></i> 25 min</span>
-                  <span><i class="fa fa-star"></i>5</span>
-                 </div>
-         </div>
-          </div>
-  
-          <div class="img-slider">
-           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2020/07/OLI0820-Healthy-TofuKatsuCurry_05300_preview-b108602.jpg?quality=90&webp=true&resize=1199,799" alt="">
-           <div class="content-slider slide-up">
-             <h4>Tofu katsu curry</h4>
-            <p>A clever veggie version of a Japanese curry 
-               classic, made by coating slabs of tofu with
-                breadcrumbs, baking them, and serving with a 
-                curried carrot,
-                ginger and honey sauce.
-            </p>
-            <div class="recipes-slider-wrapper__info">
-               <span><i class="fa fa-utensils"></i> Main dish</span>
-               <span><i class="fa fa-clock-o"></i></i> 25 min</span>
-               <span><i class="fa fa-star"></i>5</span>
-              </div>
-      </div>
-          </div>
-  
-          <div class="img-slider">
-            <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/05/OLI_0621_SEASONALBRILLIANTBASICS_21.4.21_CourgetteCurry-142-5ecc362.jpg?quality=90&webp=true&resize=1100,733" alt="">
-            <div class="content-slider">
-             <h4>Courgette curry</h4>
-               <p>This light, summery courgette curry is a brilliant 
-                  meat-free dish to add to your midweek repertoire.
-               </p>
-               <div class="recipes-slider-wrapper__info">
-                  <span><i class="fa fa-utensils"></i> Main dish</span>
-                  <span><i class="fa fa-clock-o"></i></i> 25 min</span>
-                  <span><i class="fa fa-star"></i>5</span>
-                 </div>
-         </div>
            </div>
-
-           <div class="img-slider">
-            <img src="https://images.immediate.co.uk/production/volatile/sites/2/2019/07/OLI-0919-Everyday_AubergineDhansak_32634-1ac4843.jpg?quality=90&webp=true&resize=1100,733" alt="">
-            <div class="content-slider">
-             <h4>Aubergine dhansak</h4>
-               <p>Cook aubergine pieces with fragrant 
-                  spices and red lentils for 
-                  a hearty yet healthy vegan curry.
-               </p>
-               <div class="recipes-slider-wrapper__info">
-                  <span><i class="fa fa-utensils"></i> Main dish</span>
-                  <span><i class="fa fa-clock-o"></i></i> 25 min</span>
-                  <span><i class="fa fa-star"></i>5</span>
-                 </div>
+ 
          </div>
-           </div>
-
-           <div class="img-slider">
-            <img src="https://images.immediate.co.uk/production/volatile/sites/2/2019/08/OLI-0919-Healthy-CrispySpicedPaneerCurry_32653-da216c1-e1649251120333.jpg?quality=90&webp=true&resize=1100,733" alt="">
-            <div class="content-slider slide-up">
-             <h4>Light paneer curry</h4>
-               <p>Make this veg-heavy curry for a 
-                  healthy meat-free meal. The peas add extra 
-                  protein while ginger and plum tomatoes 
-                  make a light, fragrant sauce.
-               </p>
-               <div class="recipes-slider-wrapper__info">
-                  <span><i class="fa fa-utensils"></i> Main dish</span>
-                  <span><i class="fa fa-clock-o"></i></i> 25 min</span>
-                  <span><i class="fa fa-star"></i>5</span>
-                 </div>
+       </article>
+ 
+       <article class="recipe-content-grid-bottom" id="Green-bean-curry">
+ 
+         <div class="recipe-content__img-wrapper">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/07/Olive_AugustSeasonal_11.6.21_FreshTomatoGreenBeanCurry-114-82e2ca4.jpg?quality=90&webp=true&resize=1100,733" alt="">
          </div>
+ 
+         <div class="recipe-info">
+           <h2>Green bean curry</h2>
+           <div class="recipe-info_icons">
+             <span><i class="fa fa-utensils"></i> Main dish</span>
+             <span><i class="fa fa-clock-o"></i></i> 25 min</span>
+             <span><i class="fa fa-star"></i>5</span>
            </div>
-
-           <div class="img-slider">
-            <img src="https://veganheaven.org/wp-content/uploads/2021/01/Vegan-Recipes-for-Beginners-10.jpg" alt="">
-            <div class="content-slider slide-up">
-             <h4>Green Thai tofu curry</h4>
-               <p>Looking for a quick and easy vegan curry 
-                  recipe? Try our Thai curry with smoked tofu
-                   and plenty of crunchy veg, 
-                  ready in 25 minutes and low in calories.
-               </p>
-               <div class="recipes-slider-wrapper__info">
-                  <span><i class="fa fa-utensils"></i> Main dish</span>
-                  <span><i class="fa fa-clock-o"></i></i> 25 min</span>
-                  <span><i class="fa fa-star"></i>5</span>
-                 </div>
+           <p>
+             This is a perfect main or part of a spread,
+             adapted from Laxmi Khurana’s An Indian Housewife’s
+             Recipe Book. You can use frozen beans, but use fresh
+             while they're at
+             their best in the summer to add crunch
+ 
+           </p>
+ 
+           <div class="recipe-table">
+             <table>
+               <thead>
+                 <tr>
+                   <th>ENERGY</th>
+                   <th>CALORIES</th>
+                   <th>FIBRE</th>
+                   <th>PROTEIN</th>
+                   <th>CARBS</th>
+ 
+                 </tr>
+               </thead>
+               <tr>
+                 <td>525</td>
+                 <td>2196 kj</td>
+                 <td>21.4g</td>
+                 <td>9.2g</td>
+                 <td>27.1g</td>
+               </tr>
+             </table>
+           </div>
+ 
          </div>
-           </div>
-        
-           <div class="img-slider">
-            <img src="https://images.immediate.co.uk/production/volatile/sites/2/2018/12/Olive_SriLankanCarrotCurry-fe6d813.jpg?quality=90&webp=true&resize=1100,733" alt="">
-            <div class="content-slider slide-up">
-               <h4>Sri Lankan carrot curry</h4>
-               <p>Check out our vibrant Sri Lankan curry
-                   with carrots. This vegan recipe is easy to
-                    make and ready in 
-                  under an hour, plus it's low calorie too.
-               </p>
-            
-            <div class="recipes-slider-wrapper__info">
-               <span><i class="fa fa-utensils"></i> Main dish</span>
-               <span><i class="fa fa-clock-o"></i></i> 25 min</span>
-               <span><i class="fa fa-star"></i>5</span>
-              </div>
-         </div>
-           </div>
-        
-         
-
-          
-          
-          
-        </div>
-        <div class="slider-btn">
-            <button id="prev"><</button>
-            <button id="next">></button>
-        </div>
-      
-     
-
-
-
-  
-     
-   </article>
-
-      <!------------------------------->
-       <!----------------->
-
-      <!----------------->
-<!-------------------------------------->
-      <!--------x---------------x---------->
-<!------------- Main page 5------------------------->
-
-<section class="ingredient-section">
-   
-          
-  
-   <div class="ingredient-section_image"  id="ingredients">
-      <img  src="https://byanjushka.com/wp-content/uploads/2019/12/vegane-pilzsuppe-22.jpg" alt="">
-     <div class="ingredient-section_content">
-       <h3>Find Your Ingredients</h3>
-       <h4>An overview of points of sale in your area.</h4>
-       <button>FIND A STORE</button>
+       </article>
      </div>
  
-   </div>
+     <!-------------section-slider------ contains 6 slider box------------>
  
- </section>
+     <article id="section-slider">
+       <div id="slider">
+         <div class="img-slider">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2019/12/Vegan-jackfruit-massaman-curry-V2-29c66ff-scaled.jpg?quality=90&webp=true&resize=1100,733" alt="Vegan jackfruit massaman curry">
+           <div class="content-slider">
+             <h3>Vegan jackfruit massaman curry</h3>
+             <p>A tin of jackfruit (which you can pick up at
+               almost any supermarket) is the magic ingredient
+               in this vegan
+               massaman curry, served with salted peanuts.
+             </p>
  
- <!------x-----------------------x--------->
- <!---------------Footer--------------------------->
-
-     <article class="section-about-and-contact" >
-      
-                <div class="section-about-me" id="about-me">
-                  <div class="section-about-me_image">
-                <img src="https://i.ibb.co/BBZh33h/Whats-App-Image-2022-10-25-at-15-13-03.jpg" alt="Mehran banbersta austria">
-                  </div>
-                  <div class="footer-contact_me_paragraph">
-                     <h4>About me</h4>
-                  <p>
-                     I am Mehran Banbersta and I am 35 years old.
-                     love to do sports and I also started to eat in a healty way.
-                     This helped me to stay strong.
-                  </p>
-                  </div>
-                </div>   
-
-            <div class="section-contact_me_form" id="contact-me">
-               <h2>Contact Me</h2>
-            <form action="">
-               
-               <div class="field_email">
-               <h5>Your Email</h5>
-               <input type="email" placeholder="Your Email">
-               </div>
-      
-               <div class="field_Massge">
-               <h5>Your Message</h5>
-               <input type="text" placeholder="Your Message">
-               </div>
-               <div class="btn_contact_me">
-               <button>SEND YOUR MESSAGE</button>
-               </div>
-            </form>
+             <div class="recipes-slider-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i></i> 25 min</span>
+               <span><i class="fa fa-star"></i>5</span>
+             </div>
+           </div>
          </div>
-      
-     </article>
-  
-   </main>    
-  
  
-       
-   <!---- copy-right --->
-   <!----->
+         <div class="img-slider">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2020/07/OLI0820-Healthy-TofuKatsuCurry_05300_preview-b108602.jpg?quality=90&webp=true&resize=1199,799" alt="Tofu katsu curry">
+           <div class="content-slider slide-up">
+             <h3>Tofu katsu curry</h3>
+             <p>A clever veggie version of a Japanese curry
+               classic, made by coating slabs of tofu with
+               breadcrumbs, baking them, and serving with a
+               curried carrot,
+               ginger and honey sauce.
+             </p>
+             <div class="recipes-slider-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i></i> 25 min</span>
+               <span><i class="fa fa-star"></i>5</span>
+             </div>
+           </div>
+         </div>
+ 
+         <div class="img-slider">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/05/OLI_0621_SEASONALBRILLIANTBASICS_21.4.21_CourgetteCurry-142-5ecc362.jpg?quality=90&webp=true&resize=1100,733" alt="Courgette curry">
+           <div class="content-slider">
+             <h3>Courgette curry</h3>
+             <p>This light, summery courgette curry is a brilliant
+               meat-free dish to add to your midweek repertoire.
+             </p>
+             <div class="recipes-slider-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i></i> 25 min</span>
+               <span><i class="fa fa-star"></i>5</span>
+             </div>
+           </div>
+         </div>
+ 
+         <div class="img-slider">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2019/07/OLI-0919-Everyday_AubergineDhansak_32634-1ac4843.jpg?quality=90&webp=true&resize=1100,733" alt="Aubergine dhansak">
+           <div class="content-slider">
+             <h3>Aubergine dhansak</h3>
+             <p>Cook aubergine pieces with fragrant
+               spices and red lentils for
+               a hearty yet healthy vegan curry.
+             </p>
+             <div class="recipes-slider-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i></i> 25 min</span>
+               <span><i class="fa fa-star"></i>5</span>
+             </div>
+           </div>
+         </div>
+ 
+         <div class="img-slider">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2019/08/OLI-0919-Healthy-CrispySpicedPaneerCurry_32653-da216c1-e1649251120333.jpg?quality=90&webp=true&resize=1100,733" alt="Light paneer curry">
+           <div class="content-slider slide-up">
+             <h3>Light paneer curry</h3>
+             <p>Make this veg-heavy curry for a
+               healthy meat-free meal. The peas add extra
+               protein while ginger and plum tomatoes
+               make a light, fragrant sauce.
+             </p>
+             <div class="recipes-slider-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i></i> 25 min</span>
+               <span><i class="fa fa-star"></i>5</span>
+             </div>
+           </div>
+         </div>
+ 
+         <div class="img-slider">
+           <img src="https://veganheaven.org/wp-content/uploads/2021/01/Vegan-Recipes-for-Beginners-10.jpg" alt="Green Thai tofu curry">
+           <div class="content-slider slide-up">
+             <h3>Green Thai tofu curry</h3>
+             <p>Looking for a quick and easy vegan curry
+               recipe? Try our Thai curry with smoked tofu
+               and plenty of crunchy veg,
+               ready in 25 minutes and low in calories.
+             </p>
+             <div class="recipes-slider-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i> 25 min</span>
+               <span><i class="fa fa-star"></i>5</span>
+             </div>
+           </div>
+         </div>
+ 
+         <div class="img-slider">
+           <img src="https://images.immediate.co.uk/production/volatile/sites/2/2018/12/Olive_SriLankanCarrotCurry-fe6d813.jpg?quality=90&webp=true&resize=1100,733" alt="">
+           <div class="content-slider slide-up">
+             <h3>Sri Lankan carrot curry</h3>
+             <p>Check out our vibrant Sri Lankan curry
+               with carrots. This vegan recipe is easy to
+               make and ready in
+               under an hour, plus it's low calorie too.
+             </p>
+             
+             
+ 
+             <div class="recipes-slider-wrapper__info">
+               <span><i class="fa fa-utensils"></i> Main dish</span>
+               <span><i class="fa fa-clock-o"></i></i> 25 min</span>
+               <span><i class="fa fa-star"></i>5</span>
+             </div>
+           </div>
+         </div>
+ 
+       </div>
+       <div class="slider-btn">
+           <button id="prev"><</button>
+           <button id="next">></button>
+       </div>
+     </article>
+ 
+     <!------------- ingredient-section------------------------->
+ 
+     <section class="ingredient-section">
+ 
+       <div class="ingredient-section_image" id="ingredients">
+         <img src="https://byanjushka.com/wp-content/uploads/2019/12/vegane-pilzsuppe-22.jpg" alt="">
+         <div class="ingredient-section_content">
+           <h3>Find Your Ingredients</h3>
+           <h4>An overview of points of sale in your area.</h4>
+           <button>FIND A STORE</button>
+         </div>
+ 
+       </div>
+ 
+     </section>
+ 
+ 
+     <!---------------section-about me-and-contact------------------>
+ 
+     <article class="section-about-and-contact">
+       <div class="section-about-me" id="about-me">
+         <div class="section-about-me_image">
+           <img src="https://i.ibb.co/BBZh33h/Whats-App-Image-2022-10-25-at-15-13-03.jpg" alt="Mehran banbersta austria">
+         </div>
+         <div class="section-about-me_info">
+           <h4>About me</h4>
+           <p>
+             I am Mehran Banbersta and I am 35 years old.
+             love to do sports and I also started to eat in a healty way.
+             This helped me to stay strong.
+           </p>
+           <div class="self-introduction">
+               <a  href="https://youtu.be/CuQ3xt4fcCA"> HYF self-introduction video</a>
+           </div>
+            
+         </div>
+       </div>
+ 
+       <div class="section-contact_me_form" id="contact-me">
+         <h2>Contact Me</h2>
+         <form action="">
+ 
+           <div class="field_email">
+             <h5>Your Email</h5>
+             <input type="email" placeholder="Your Email">
+           </div>
+ 
+           <div class="field_Massge">
+             <h5>Your Message</h5>
+             <input type="text" placeholder="Your Message">
+           </div>
+           <div class="btn_contact_me">
+             <button>SEND YOUR MESSAGE</button>
+           </div>
+         </form>
+       </div>
+     </article>
+ 
+   </main>
+ 
+   
+   <!---------------footer------------------>
    <footer>
-       <div class="copy_right">
-         <h4>All Rights Reserved&copy;2022</h4>
-       </div>
- <!--    Social media  -->
-       <div class="footer-social_media">
-         <a href="" class="fa fa-facebook">&nbsp;&nbsp;Facebook</a>
-         <a href="" class="fa fa-instagram">&nbsp;&nbsp;Instagram</a>
-         <a href="" class="fa fa-twitter">&nbsp;&nbsp;Twitter</a>
-         <a href="" class="fa fa-youtube">&nbsp;&nbsp;Youtube</a>
-       </div>
-  </footer>
-
- <!------------------------------->
-
-  
-
+     <div class="copy_right">
+       <h4>All Rights Reserved&copy;2022</h4>
+     </div>
+     <!--    Social media  -->
+     <div class="footer-social_media">
+       <a href="" class="fa fa-facebook">&nbsp;&nbsp;Facebook</a>
+       <a href="" class="fa fa-instagram">&nbsp;&nbsp;Instagram</a>
+       <a href="" class="fa fa-twitter">&nbsp;&nbsp;Twitter</a>
+       <a href="" class="fa fa-youtube">&nbsp;&nbsp;Youtube</a>
+     </div>
+   </footer>
+ 
 
 
 <script src="./myjs.js"></script>
