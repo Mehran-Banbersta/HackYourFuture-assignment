@@ -563,6 +563,11 @@ header nav.header-nav ul li a:hover:not(.active) {
   color: #101113;
 }
 
+.recipes-content-wrapper__bottom h5 {
+  /**/
+text-decoration: underline;
+}
+
 .recipes-content-wrapper__bottom .fa-star {
   color: var(--secondary-color);
 }
