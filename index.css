@@ -373,7 +373,7 @@ header nav.header-nav ul li a:hover:not(.active) {
     position: fixed;
     width: 100%;
     z-index: 11111;
-    padding: .7rem;
+    padding: .45rem;
   }
 
   /******** social icons *********/
