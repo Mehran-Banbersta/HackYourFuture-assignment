@@ -550,8 +550,8 @@ header nav.header-nav ul li a:hover:not(.active) {
 }
 /********* content-wrapper ***********/
 .content p {
-  padding-top: 0.7rem;
-  font-size: 1.1rem;
+  padding-top: 0.6rem;
+  font-size: .9rem;
   width: 90%;
 }
 
