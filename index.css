@@ -141,13 +141,13 @@ header .header-logo .fa-vimeo-v {
   width: 24px;
   height: 4.5px;
   top: 1.7rem;
-  right: .65rem;
+  right: .9rem;
   cursor: pointer;
 }
 
 .mobile-menu-btn__burger {
   position: absolute;
-  width: 24px;
+  width: 20px;
   height: 3px;
   background: #111;
 }
@@ -389,7 +389,7 @@ header nav.header-nav ul li a:hover:not(.active) {
   /*********** header-btn ************/
 
   .header-btn-user {
-    padding-right: 2.9rem;
+    padding-right: 3.3rem;
   }
 
   .header-btn-user button {
