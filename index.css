@@ -501,7 +501,7 @@ header nav.header-nav ul li a:hover:not(.active) {
 
   .main-text .line::after,
   .main-text .line::before {
-    width: 12%;
+    width: 10%;
   }
 }
 
@@ -779,8 +779,6 @@ text-decoration: underline;
   .sign_up {
     background-color: #1d1d1c;
     color: var(--primary_color);
-   
-
     width: 100%;
   }
 
@@ -794,8 +792,8 @@ text-decoration: underline;
     display: flex;
     flex-direction: column;
   }
-  .sign_up h3 {
-    font-size: 0.7rem;
+  .sign_up h4 {
+    font-size: 0.8rem;
 
    
   }
